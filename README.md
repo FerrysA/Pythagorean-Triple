@@ -1,8 +1,8 @@
-# Pythagorean-Triple
-# 07.10.22
-# метод pythagoreanTriple возвращает 1 если целые a,b,c являются прифагоровыми тройками
-# [ссылка на задание](https://www.codewars.com/kata/5951d30ce99cf2467e000013)
-реализация :
+## Pythagorean-Triple
+## 07.10.22
+## метод pythagoreanTriple возвращает 1 если целые a,b,c являются прифагоровыми тройками
+## [ссылка на задание](https://www.codewars.com/kata/5951d30ce99cf2467e000013)
+# реализация :
 * public static int pythagoreanTriple(int[] triple){
 
         int a = triple[0];
@@ -13,3 +13,13 @@
         if (b*b==a*a+c*c){return 1;}
     return 0;
     }
+# понравившееся решение, автор g0Shack,
+* public class PythagoreanTriple {
+ 
+    public int pythagoreanTriple(int[] triple){
+    
+        return triple[0] * triple[0] + triple[1] * triple[1] == triple[2] * triple[2] ? 1 : 0;
+        
+    }
+}
+
